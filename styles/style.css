@@ -8,8 +8,8 @@ body{
      header styles
 ---------------------- */
 /* nav style  */
-nav{
-    margin: 100px 120px;
+.nav-bar{
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -18,7 +18,6 @@ nav{
     font-size: 24px;
 }
 .nav-items{
-   
     gap: 34px;
     display: flex;
 }
@@ -26,7 +25,7 @@ nav{
     font-weight: 600;
     font-size: 16px;
 }
-.buy i, .search i{
+.buy i, .search i, .menu i{
     color: #0A0826;
 }
 .nav-items a{
@@ -213,6 +212,10 @@ footer{
            responsive part 
  --------------------------------------*/
 @media only screen and (max-width: 668px) {
+    .menu-hide{
+        display: none;
+    }
+    
     .header-items{
         margin: 0;
         flex-direction: column-reverse;
@@ -269,10 +272,19 @@ footer{
     
 
 }
-@media only screen and (min-width: 669px) and (max-width: 1440px) {
-    .header-items{
-        width: 582px;
-        height: 270px;
+
+/*-----------------------
+         for desktop 
+------------------------ */
+@media only screen and (min-width: 669px) and (max-width: 1500px) {
+
+    .nav-bar{
+        text-align: center;
+       padding: 0;
+        margin: 100px 120px;
+    }
+    .menu{
+        display: none;
     }
 }
 
