@@ -253,7 +253,18 @@ footer{
     }
     .featured-product{
         flex-direction: column-reverse;
-        margin: 20px;
+        margin: 16pxpx;
+    }
+    .featured-title{
+        width: 300px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .featured-info{
+        width: 300px;
+    }
+    .featured-btn{
+        margin-top: 40px;
     }
     
 
